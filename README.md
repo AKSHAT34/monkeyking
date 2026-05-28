@@ -102,6 +102,11 @@ Dashboard: <http://localhost:8501>
 
 This project is **for educational and research purposes only**. Many job portals' Terms of Service prohibit automated submissions. Always check the ToS for each site, respect `robots.txt`, throttle aggressively, and only target portals where you have a legitimate reason to apply. The authors accept no responsibility for misuse.
 
+
+## Project status
+
+Started in late 2024 once vision-capable LLMs made screenshot-driven web automation actually feasible. Companion experiment to EmployMe — focuses on the harder problem of filling and submitting per-company portal forms rather than the discovery and matching pipeline. First open-sourced May 2026.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
