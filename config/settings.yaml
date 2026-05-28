@@ -1,0 +1,117 @@
+# MonkeyKing Configuration
+user:
+  name: "Your Name"
+  email: "you@example.com"
+  phone: "+1 555 555 0100"
+  location: "Bangalore, India"
+  linkedin: "linkedin.com/in/your-handle"
+
+job_preferences:
+  target_roles:
+    - "AI Product Manager"
+    - "AI Program Manager"
+    - "AI Account Manager"
+    - "AI Project Manager"
+    - "Product Manager - AI/ML"
+    - "Technical Program Manager - AI"
+    - "Strategic Account Manager - AI"
+    - "Product Owner - AI Platforms"
+    - "AI Operations Manager"
+    - "AI Platform Manager"
+  
+  keywords:
+    - "artificial intelligence"
+    - "machine learning"
+    - "AI agents"
+    - "conversational AI"
+    - "product management"
+    - "program management"
+    - "account management"
+    - "AI platforms"
+    - "enterprise AI"
+    - "AI automation"
+  
+  location_preference: "india_remote"  # india_remote = India-based or Remote roles
+  preferred_locations:
+    - "Remote"
+    - "Bangalore"
+    - "Mumbai"
+    - "Delhi"
+    - "Hyderabad"
+    - "Pune"
+    - "Chennai"
+    - "Gurgaon"
+    - "Noida"
+    - "India"
+  
+  work_authorization:
+    country: "India"
+    needs_sponsorship: true  # For non-India roles
+    willing_to_relocate: true
+  
+  min_match_score: 0.6  # 0-1, minimum relevance score to apply
+  max_applications_per_run: 100
+  
+  exclude_companies: []
+  
+  experience_years: 9
+
+# Company career pages to scan
+target_companies:
+  tech_giants:
+    - { name: "Google", careers_url: "https://careers.google.com" }
+    - { name: "Microsoft", careers_url: "https://careers.microsoft.com" }
+    - { name: "Meta", careers_url: "https://www.metacareers.com" }
+    - { name: "Apple", careers_url: "https://jobs.apple.com" }
+    - { name: "Salesforce", careers_url: "https://careers.salesforce.com" }
+    - { name: "Oracle", careers_url: "https://careers.oracle.com" }
+    - { name: "SAP", careers_url: "https://jobs.sap.com" }
+    - { name: "IBM", careers_url: "https://www.ibm.com/careers" }
+    - { name: "Nvidia", careers_url: "https://www.nvidia.com/en-us/about-nvidia/careers" }
+    - { name: "Adobe", careers_url: "https://careers.adobe.com" }
+  
+  ai_companies:
+    - { name: "OpenAI", careers_url: "https://openai.com/careers" }
+    - { name: "Anthropic", careers_url: "https://www.anthropic.com/careers" }
+    - { name: "Cohere", careers_url: "https://cohere.com/careers" }
+    - { name: "Mistral AI", careers_url: "https://mistral.ai/careers" }
+    - { name: "Hugging Face", careers_url: "https://huggingface.co/jobs" }
+    - { name: "Databricks", careers_url: "https://www.databricks.com/company/careers" }
+    - { name: "Scale AI", careers_url: "https://scale.com/careers" }
+    - { name: "Runway", careers_url: "https://runwayml.com/careers" }
+  
+  cloud_enterprise:
+    - { name: "AWS", careers_url: "https://www.amazon.jobs" }
+    - { name: "Snowflake", careers_url: "https://careers.snowflake.com" }
+    - { name: "ServiceNow", careers_url: "https://careers.servicenow.com" }
+    - { name: "Atlassian", careers_url: "https://www.atlassian.com/company/careers" }
+    - { name: "Stripe", careers_url: "https://stripe.com/jobs" }
+    - { name: "Twilio", careers_url: "https://www.twilio.com/company/jobs" }
+  
+  consulting_strategy:
+    - { name: "McKinsey", careers_url: "https://www.mckinsey.com/careers" }
+    - { name: "BCG", careers_url: "https://careers.bcg.com" }
+    - { name: "Deloitte", careers_url: "https://apply.deloitte.com" }
+    - { name: "Accenture", careers_url: "https://www.accenture.com/us-en/careers" }
+
+# LLM Configuration
+llm:
+  primary: "kiro"  # Uses Kiro's built-in model (free)
+  fallback: "deepseek"
+  deepseek:
+    api_key: ""  # Add your DeepSeek API key here
+    model: "deepseek-chat"
+    base_url: "https://api.deepseek.com/v1"
+
+# Email Configuration  
+email:
+  imap_server: "imap.gmail.com"
+  smtp_server: "smtp.gmail.com"
+  address: "you@example.com"
+  # App password loaded from .env file (NEVER put credentials here)
+  app_password: ""  # overridden by GMAIL_APP_PASSWORD in .env
+
+# Dashboard
+dashboard:
+  host: "0.0.0.0"
+  port: 8501

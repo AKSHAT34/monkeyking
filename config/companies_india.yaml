@@ -1,0 +1,154 @@
+# India's Top Companies — Career Pages for MonkeyKing Scanner
+# Categories: Tech Giants (India), IT Services, AI/ML Startups, 
+# Unicorns, GCCs, Consulting, Fintech, E-commerce, SaaS
+
+tech_giants_india:
+  - { name: "Google India", careers_url: "https://careers.google.com/jobs/results/?location=India" }
+  - { name: "Microsoft India", careers_url: "https://careers.microsoft.com/global/en/search?l=India" }
+  - { name: "Amazon India", careers_url: "https://www.amazon.jobs/en/locations/india" }
+  - { name: "Meta India", careers_url: "https://www.metacareers.com/jobs?offices[0]=India" }
+  - { name: "Apple India", careers_url: "https://jobs.apple.com/en-in/search" }
+  - { name: "Nvidia India", careers_url: "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite" }
+  - { name: "Adobe India", careers_url: "https://careers.adobe.com/us/en/search-results?keywords=india" }
+  - { name: "Salesforce India", careers_url: "https://careers.salesforce.com/en/jobs/?country=India" }
+  - { name: "Oracle India", careers_url: "https://careers.oracle.com/jobs/#en/sites/jobsearch/requisitions?location=India" }
+  - { name: "SAP India", careers_url: "https://jobs.sap.com/search/?q=&locationsearch=India" }
+  - { name: "IBM India", careers_url: "https://www.ibm.com/careers/search?field_keyword_18[0]=India" }
+  - { name: "Intel India", careers_url: "https://jobs.intel.com/en/search-jobs/India" }
+  - { name: "Qualcomm India", careers_url: "https://careers.qualcomm.com/careers?location=India" }
+  - { name: "Samsung India", careers_url: "https://www.samsung.com/in/about-us/careers/" }
+  - { name: "Uber India", careers_url: "https://www.uber.com/in/en/careers/" }
+
+it_services:
+  - { name: "TCS", careers_url: "https://www.tcs.com/careers" }
+  - { name: "Infosys", careers_url: "https://www.infosys.com/careers/" }
+  - { name: "Wipro", careers_url: "https://careers.wipro.com/" }
+  - { name: "HCLTech", careers_url: "https://www.hcltech.com/careers" }
+  - { name: "Tech Mahindra", careers_url: "https://careers.techmahindra.com/" }
+  - { name: "LTIMindtree", careers_url: "https://www.ltimindtree.com/careers/" }
+  - { name: "Persistent Systems", careers_url: "https://careers.persistent.com/" }
+  - { name: "Mphasis", careers_url: "https://careers.mphasis.com/" }
+  - { name: "Coforge", careers_url: "https://www.coforge.com/careers" }
+  - { name: "Zensar Technologies", careers_url: "https://www.zensar.com/careers" }
+
+ai_ml_companies:
+  - { name: "OpenAI", careers_url: "https://openai.com/careers/search" }
+  - { name: "Anthropic", careers_url: "https://www.anthropic.com/careers" }
+  - { name: "Ola Krutrim", careers_url: "https://www.olakrutrim.com/careers" }
+  - { name: "Sarvam AI", careers_url: "https://www.sarvam.ai/careers" }
+  - { name: "Fractal Analytics", careers_url: "https://fractal.ai/careers/" }
+  - { name: "Mu Sigma", careers_url: "https://www.mu-sigma.com/careers" }
+  - { name: "Tiger Analytics", careers_url: "https://www.tigeranalytics.com/careers/" }
+  - { name: "Sigmoid", careers_url: "https://www.sigmoid.com/careers/" }
+  - { name: "Haptik", careers_url: "https://www.haptik.ai/careers" }
+  - { name: "Yellow.ai", careers_url: "https://yellow.ai/careers/" }
+  - { name: "Observe.AI", careers_url: "https://www.observe.ai/company/careers" }
+  - { name: "Uniphore", careers_url: "https://www.uniphore.com/careers/" }
+  - { name: "Mad Street Den (Vue.ai)", careers_url: "https://www.madstreetden.com/careers/" }
+  - { name: "SigTuple", careers_url: "https://sigtuple.com/careers/" }
+  - { name: "Dataiku", careers_url: "https://www.dataiku.com/careers/" }
+
+unicorns_startups:
+  - { name: "Flipkart", careers_url: "https://www.flipkartcareers.com/" }
+  - { name: "Swiggy", careers_url: "https://careers.swiggy.com/" }
+  - { name: "Zomato", careers_url: "https://www.zomato.com/careers" }
+  - { name: "PhonePe", careers_url: "https://www.phonepe.com/careers/" }
+  - { name: "CRED", careers_url: "https://careers.cred.club/" }
+  - { name: "Razorpay", careers_url: "https://razorpay.com/careers/" }
+  - { name: "Zerodha", careers_url: "https://zerodha.com/careers/" }
+  - { name: "Meesho", careers_url: "https://meesho.io/careers" }
+  - { name: "Groww", careers_url: "https://groww.in/careers" }
+  - { name: "Ola", careers_url: "https://www.olacabs.com/careers" }
+  - { name: "Byju's", careers_url: "https://byjus.com/careers/" }
+  - { name: "Unacademy", careers_url: "https://unacademy.com/careers" }
+  - { name: "Dream11", careers_url: "https://www.dreamsports.group/careers/" }
+  - { name: "Paytm", careers_url: "https://paytm.com/careers/" }
+  - { name: "Nykaa", careers_url: "https://www.nykaa.com/careers" }
+  - { name: "Lenskart", careers_url: "https://www.lenskart.com/careers" }
+  - { name: "UpGrad", careers_url: "https://www.upgrad.com/careers/" }
+  - { name: "Freshworks", careers_url: "https://www.freshworks.com/company/careers/" }
+  - { name: "Zoho", careers_url: "https://www.zoho.com/careers/" }
+  - { name: "Postman", careers_url: "https://www.postman.com/company/careers/" }
+
+gccs_india:
+  - { name: "Goldman Sachs India", careers_url: "https://www.goldmansachs.com/careers/find-a-job" }
+  - { name: "JP Morgan India", careers_url: "https://careers.jpmorgan.com/global/en/home" }
+  - { name: "Morgan Stanley India", careers_url: "https://www.morganstanley.com/careers" }
+  - { name: "Deutsche Bank India", careers_url: "https://careers.db.com/" }
+  - { name: "Barclays India", careers_url: "https://search.jobs.barclays/" }
+  - { name: "HSBC India", careers_url: "https://www.hsbc.com/careers" }
+  - { name: "Citibank India", careers_url: "https://jobs.citi.com/" }
+  - { name: "American Express India", careers_url: "https://www.americanexpress.com/en-in/careers/" }
+  - { name: "Walmart Global Tech India", careers_url: "https://careers.walmart.com/" }
+  - { name: "Target India", careers_url: "https://india.target.com/" }
+  - { name: "Wells Fargo India", careers_url: "https://www.wellsfargojobs.com/" }
+  - { name: "PayPal India", careers_url: "https://careers.pypl.com/home/" }
+  - { name: "Visa India", careers_url: "https://usa.visa.com/careers.html" }
+  - { name: "Mastercard India", careers_url: "https://careers.mastercard.com/" }
+  - { name: "Deloitte India", careers_url: "https://www2.deloitte.com/in/en/careers.html" }
+
+saas_product:
+  - { name: "Atlassian India", careers_url: "https://www.atlassian.com/company/careers" }
+  - { name: "Notion", careers_url: "https://www.notion.so/careers" }
+  - { name: "Slack (Salesforce)", careers_url: "https://slack.com/careers" }
+  - { name: "Chargebee", careers_url: "https://www.chargebee.com/company/careers/" }
+  - { name: "Browserstack", careers_url: "https://www.browserstack.com/careers" }
+  - { name: "Druva", careers_url: "https://www.druva.com/careers/" }
+  - { name: "Icertis", careers_url: "https://www.icertis.com/careers/" }
+  - { name: "CleverTap", careers_url: "https://www.clevertap.com/careers/" }
+  - { name: "MoEngage", careers_url: "https://www.moengage.com/careers/" }
+  - { name: "WebEngage", careers_url: "https://webengage.com/careers/" }
+  - { name: "Hasura", careers_url: "https://hasura.io/careers/" }
+  - { name: "Mindtickle", careers_url: "https://www.mindtickle.com/careers/" }
+  - { name: "LeadSquared", careers_url: "https://www.leadsquared.com/careers/" }
+  - { name: "Darwinbox", careers_url: "https://www.darwinbox.com/careers" }
+  - { name: "Sprinklr India", careers_url: "https://www.sprinklr.com/careers/" }
+
+fintech:
+  - { name: "Pine Labs", careers_url: "https://www.pinelabs.com/careers" }
+  - { name: "BharatPe", careers_url: "https://www.bharatpe.com/careers" }
+  - { name: "Slice", careers_url: "https://www.sliceit.com/careers" }
+  - { name: "Jupiter", careers_url: "https://jupiter.money/careers/" }
+  - { name: "Fi Money", careers_url: "https://fi.money/careers" }
+  - { name: "Niyo", careers_url: "https://www.goniyo.com/careers/" }
+  - { name: "Rupeek", careers_url: "https://www.rupeek.com/careers" }
+  - { name: "KreditBee", careers_url: "https://www.kreditbee.in/careers" }
+  - { name: "Paytm Money", careers_url: "https://paytm.com/careers/" }
+  - { name: "Policybazaar", careers_url: "https://careers.policybazaar.com/" }
+
+consulting_india:
+  - { name: "McKinsey India", careers_url: "https://www.mckinsey.com/careers" }
+  - { name: "BCG India", careers_url: "https://careers.bcg.com/" }
+  - { name: "Bain India", careers_url: "https://www.bain.com/careers/" }
+  - { name: "Accenture India", careers_url: "https://www.accenture.com/in-en/careers" }
+  - { name: "EY India", careers_url: "https://www.ey.com/en_in/careers" }
+  - { name: "PwC India", careers_url: "https://www.pwc.in/careers.html" }
+  - { name: "KPMG India", careers_url: "https://kpmg.com/in/en/home/careers.html" }
+
+conglomerates:
+  - { name: "Reliance Industries", careers_url: "https://careers.ril.com/" }
+  - { name: "Tata Group", careers_url: "https://www.tata.com/careers" }
+  - { name: "Mahindra Group", careers_url: "https://careers.mahindra.com/" }
+  - { name: "Adani Group", careers_url: "https://www.adani.com/careers" }
+  - { name: "Aditya Birla Group", careers_url: "https://careers.adityabirla.com/" }
+  - { name: "Godrej", careers_url: "https://www.godrejcareers.com/" }
+  - { name: "ITC", careers_url: "https://www.itcportal.com/careers/" }
+  - { name: "Larsen & Toubro", careers_url: "https://www.larsentoubro.com/careers/" }
+  - { name: "Bajaj Group", careers_url: "https://www.bajajfinserv.in/careers" }
+  - { name: "Vedanta", careers_url: "https://www.vedantalimited.com/careers/" }
+
+healthtech_edtech:
+  - { name: "Practo", careers_url: "https://www.practo.com/company/careers" }
+  - { name: "PharmEasy", careers_url: "https://pharmeasy.in/careers" }
+  - { name: "1mg (Tata)", careers_url: "https://www.1mg.com/careers" }
+  - { name: "Scaler", careers_url: "https://www.scaler.com/careers/" }
+  - { name: "Physics Wallah", careers_url: "https://www.physicswallah.live/careers" }
+  - { name: "Vedantu", careers_url: "https://www.vedantu.com/careers" }
+  - { name: "Simplilearn", careers_url: "https://www.simplilearn.com/careers" }
+
+logistics_mobility:
+  - { name: "Delhivery", careers_url: "https://www.delhivery.com/careers/" }
+  - { name: "Rapido", careers_url: "https://www.rapido.bike/careers" }
+  - { name: "Dunzo", careers_url: "https://www.dunzo.com/careers" }
+  - { name: "Rivigo", careers_url: "https://www.rivigo.com/careers" }
+  - { name: "BlackBuck", careers_url: "https://www.blackbuck.com/careers" }

@@ -1,0 +1,177 @@
+# Parsed CV Data — Your Name
+# This is the structured version of your CV used by the CV Tailor Agent
+
+personal:
+  name: "Your Name"
+  title: "Project Manager – AI | Strategic Account Manager"
+  email: "you@example.com"
+  phone: "+1 555 555 0100"
+  location: "Bangalore, India"
+  dob: "<DOB>"
+  linkedin: "linkedin.com/in/your-handle"
+
+summary: >
+  Product & Growth Leader with 9+ years of experience spanning AI platforms, 
+  enterprise account management, and category-led revenue growth. Proven track 
+  record owning $40M+ GMV portfolios, scaling AI-driven systems used by thousands 
+  of users, and driving double-digit YoY growth through data-backed pricing, 
+  assortment, and operational excellence. Experienced working with senior leadership, 
+  cross-functional teams and CRM to deliver scalable products, resilient platforms, 
+  and measurable business outcomes across global markets.
+
+experience:
+  - title: "Strategic Account Manager"
+    company: "Amazon"
+    location: "Bangalore, India (On-site)"
+    period: "April 2024 - Present"
+    highlights:
+      - "Category & Revenue Growth: Owned category and vendor relation performance across 20 enterprise brands and $40M+ GMV, driving 127% YoY KPI growth through assortment expansion, availability improvements, and event-led demand acceleration across multiple categories."
+      - "Assortment, Availability & Supply Readiness: Improved in-stock availability by 15-20% on top-selling SKUs by aligning vendors on demand forecasts, inventory commitments, and operational readiness, reducing lost sales during peak events."
+      - "Pricing, Promotions & Margin Optimization: Led pricing negotiations and promotional planning with vendors, delivering 9% improvement in brand profitability while sustaining volume growth through data-backed price corrections and targeted discount strategies."
+      - "Event Execution & Operational Excellence: Owned end-to-end execution for 18+ Tier-1 and Tier-2 sale events (Prime Day, Black Friday equivalents), driving 20%+ uplift in event GMV through cross-functional coordination, inventory planning, and execution discipline."
+
+  - title: "Finance Associate"
+    company: "<Previous-Employer-3>"
+    location: "Remote"
+    period: "Dec 2023 - March 2024"
+    highlights:
+      - "Financial Reporting & Analysis: Managed end-to-end finance including bookkeeping (QuickBooks), CFS, B/S, P&L; delivered variance analysis + month-end close for 3 entities, built budgets/forecasts improving planning accuracy by 27%."
+      - "Financial Modeling & ROI Optimization: Built models that drove data-based decisions and boosted ROI by 3x. Analyzed financial scenarios to support investment strategies."
+
+  - title: "Financial Controller / Analyst and Accountant"
+    company: "<Previous-Employer-2>"
+    location: "France (On-site)"
+    period: "Sept 2022 - June 2023"
+    highlights:
+      - "Budgeting, Forecasting & FP&A: Led budget planning, variance analysis, and financial trend forecasting for clients (€5M–€260M)."
+      - "Financial Reporting & Decision Support: Delivered accurate monthly statements and insights for hiring, investment, and CCC improvements by 38%."
+      - "Dashboards, ERP & Data Visualization: Created BI dashboards using multiple data tables for executive decision-making."
+      - "Accounting & Transaction Management: Handled full-cycle accounting for 26 clients, ensuring accuracy and compliance."
+
+  - title: "Manager"
+    company: "<Previous-Employer-1>"
+    location: "France (On-site)"
+    period: "May 2018 - October 2021"
+    highlights:
+      - "Owned end-to-end operations, team management, compliance and financial performance for a multi-staff hospitality business."
+
+projects:
+  - name: "Project Finder – AI Talent & Project Intelligence Platform"
+    role: "Product Owner & Delivery Lead"
+    company: "Amazon"
+    period: "April 2024 - Present"
+    description: >
+      Originated and led delivery of a global internal platform aggregating all current 
+      and historical projects across Retail, ATS, AWS, and Worldwide Stores. Built the 
+      largest internal database of initiatives. Achieved 2,200+ unique users, 500+ applications, 
+      and 100,000+ logins within 6 months.
+
+  - name: "Performance Review Automation Platform"
+    role: "BRD & Ownership System"
+    company: "Amazon"
+    description: >
+      Owned end-to-end delivery of an automation platform for half-yearly and annual reviews 
+      across 300+ Account Managers. Delivered 60-80 hours saved per Account Manager and 
+      216 hours saved per Team Lead.
+
+  - name: "AERO – Global AI-Powered Ticketing & Query Resolution Platform"
+    role: "Product Owner"
+    company: "Amazon"
+    description: >
+      Owned end-to-end design and deployment of AI agents automating Account Manager queries 
+      across 47 internal tools. Mapped complex business workflows into AI conversation flows, 
+      defined prompt structures, decision logic and integration architecture.
+
+  - name: "Strategic Insights Automation Tool"
+    role: "Strategy & Delivery Lead"
+    company: "Amazon"
+    description: >
+      Led strategy and delivery of an AI-powered tool generating 10-page strategic reports 
+      using SEO, ads data, and category benchmarking. Reduced manual effort by 40+ hours per report.
+
+  - name: "AMICOMPTA – AI Accounting Automation"
+    role: "AI Product Owner"
+    company: "<Previous-Employer-2>"
+    period: "Sept 2022 - June 2023"
+    description: >
+      Owned end-to-end delivery of an AI-driven invoice recognition and bookkeeping automation 
+      platform. Automated ~70% of bookkeeping processes.
+
+education:
+  - degree: "MBA in Finance"
+    institution: "<University-1> University"
+    period: "2025 - 2026"
+  - degree: "Bachelor of Science in Business Administration"
+    institution: "<University-2>, USA"
+    period: "2021 - 2024"
+  - degree: "Bachelor of Computer Science"
+    institution: "<University-3>, France"
+    period: "2018 - 2020"
+  - degree: "<Language-Diploma> (French Language Diploma)"
+    institution: "<University-3>, France"
+    period: "2016 - 2018"
+
+skills:
+  delivery_execution:
+    - "Agile/Scrum"
+    - "JIRA"
+    - "Sprint Planning"
+    - "Roadmaps"
+    - "Milestones"
+    - "Risk Management"
+    - "Budgeting & Forecasting"
+    - "Data Analysis"
+    - "Market Research"
+  
+  ai_automation:
+    - "AI Agent design & deployment"
+    - "Prompt engineering & prompt logic optimization"
+    - "Workflow-to-agent mapping"
+    - "Enterprise AI agent integration"
+    - "AI adoption & scaling strategies"
+    - "Conversational AI"
+  
+  data_platforms:
+    - "APIs"
+    - "AWS (Lambda, S3, API Gateway)"
+    - "SQL (basic)"
+    - "Data pipelines"
+    - "Tableau"
+    - "Power BI"
+    - "Salesforce"
+    - "n8n"
+    - "LM Studio"
+    - "Ollama"
+    - "Internal analytics dashboards"
+    - "KPI monitoring"
+    - "Event-based workflows"
+  
+  leadership:
+    - "Stakeholder management (Senior leadership, L6-L8)"
+    - "Project Planning & Execution (Agile/Scrum, Jira, Waterfall)"
+    - "Cross-functional delivery"
+    - "Performance Monitoring"
+    - "Risk Management"
+
+certificates:
+  - "Google Data Analyst Certificate (2024)"
+  - "Google Project Management Certificate (2024)"
+  - "Financial Markets – Yale (2023)"
+  - "Financial Analyst – Udemy (2023)"
+  - "J.P. Morgan Investment Banking (2022)"
+
+languages:
+  - "English (Native)"
+  - "French (Native)"
+  - "Hindi (Native)"
+  - "German (Basic)"
+
+references:
+  - name: "Andy Bateman"
+    title: "Senior Program Manager"
+    company: "Amazon"
+    email: "reference1@example.com"
+  - name: "Nicolas Chanteux"
+    title: "Senior BIE Engineer"
+    company: "Amazon"
+    email: "reference2@example.com"
