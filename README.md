@@ -24,7 +24,7 @@ The live system is two services orchestrated by `docker-compose.yml`:
 | `frontend/` | Next.js App Router dashboard — matches, search, CVs, tracking, settings |
 | `docker-compose.yml` | One command to run the full stack (backend + frontend) |
 | `legacy/` | Quarantined apply pipeline — reference implementation for future auto-apply port |
-| `backend/data/ats_patterns/` | Learned ATS form fingerprints (empty at install; populated at runtime) |
+| `backend/data/ats_patterns/` | ATS form fingerprints the scanner reads as a shortcut. Empty today — the only writer (`legacy/agents/ats_learner.py`) is quarantined, so nothing populates it until auto-apply is ported back. |
 
 **No `main.py`, `orchestrator.py`, `agents/`, `dashboard/`, or root `config/` — these were removed.**
 
@@ -139,7 +139,7 @@ npm run dev
 | File | Purpose |
 | --- | --- |
 | `.env` | All runtime secrets (see table above) |
-| `backend/data/ats_patterns/*.json` | Learned ATS form fingerprints per company (created at runtime; gitignored) |
+| `backend/data/ats_patterns/*.json` | ATS form fingerprints per company, read by `job_scanner._check_ats_patterns()`. Lives on the `mk_data` volume (`/app/data`), so it survives rebuilds; gitignored and currently never written — see the note above. |
 
 No `config/cv_data.yaml`, `config/settings.yaml`, or `config/base_cv.pdf` — CV data is uploaded via the UI (`/api/cv/upload`) and stored in the database.
 
