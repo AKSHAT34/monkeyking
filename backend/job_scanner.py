@@ -140,11 +140,11 @@ def _get_prioritized_methods(db, company_id: int) -> list[str]:
 
 
 def _check_ats_patterns(company_name: str) -> tuple | None:
-    """Check data/ats_patterns/ for a matching JSON file. Returns (ats_type, url) or None."""
+    """Check backend/data/ats_patterns/ for a matching JSON file. Returns (ats_type, url) or None."""
     RECOGNIZED_ATS = {"greenhouse", "lever", "ashby", "workday", "smartrecruiters", "workable", "recruitee", "breezy", "hirehive"}
     try:
         import json
-        patterns_dir = Path(__file__).parent.parent / "data" / "ats_patterns"
+        patterns_dir = Path(__file__).parent / "data" / "ats_patterns"
         if not patterns_dir.exists():
             return None
         # Normalize name: "Adobe India" → "adobe_india"
@@ -882,7 +882,7 @@ async def scan_company_browser(browser, company: dict, roles: list[str], timeout
 # ─── HYBRID SCAN: API first, browser fallback ──────────
 async def scan_company_hybrid(browser, company: dict, roles: list[str], client: httpx.AsyncClient,
                               llm_provider: str = "deepseek", llm_key: str = "",
-                              db=None, company_id: int = 0) -> list[dict]:
+                              db=None, company_id: int = 0, user_id: int = 0) -> list[dict]:
     """Try ATS API first (instant), then browser, then Google search as last resort."""
     name = company["name"]
     url = company["careers_url"]
@@ -1043,20 +1043,20 @@ async def scan_company_hybrid(browser, company: dict, roles: list[str], client: 
         google_key = ""
         if llm_key and llm_provider == "google":
             google_key = llm_key
-        else:
-            # Check user's saved Google key
+        elif user_id and db:
+            # Check user's saved Google key from settings
             from models import UserLLMSettings
-            from auth import get_db
-            try:
-                sdb = next(get_db())
-                settings = sdb.query(UserLLMSettings).filter_by(user_id=None).first()  # TODO: need user_id
-                sdb.close()
-            except:
-                pass
-            # Fallback to env var
-            import os
+            settings = db.query(UserLLMSettings).filter_by(user_id=user_id).first()
+            if settings:
+                google_key = settings.google_key or ""
+            # Fallback to env var only if user has no saved key
             if not google_key:
+                import os
                 google_key = os.environ.get("GOOGLE_AI_KEY", "")
+        else:
+            # No user context, fall back to env var
+            import os
+            google_key = os.environ.get("GOOGLE_AI_KEY", "")
 
         if google_key:
             print(f"  🔭 {name}: trying vision browser agent (Gemini)...", flush=True)
@@ -1138,7 +1138,7 @@ async def _process_one_company(
         company_id = company_record.id if company_record else 0
         company_jobs = await scan_company_hybrid(browser, company, target_roles, client,
                                                 llm_provider=llm_provider, llm_key=llm_key,
-                                                db=db, company_id=company_id)
+                                                db=db, company_id=company_id, user_id=user_id)
     except Exception as e:
         company_jobs = []
         print(f"  ❌ {company['name']}: {e}", flush=True)
