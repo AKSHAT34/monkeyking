@@ -862,6 +862,7 @@ async def api_list_companies(
     category: Optional[str] = None,
     country: Optional[str] = None,
     search: Optional[str] = None,
+    user: User = Depends(get_current_user),
     db: Session = Depends(get_db),
 ):
     q = db.query(Company)
